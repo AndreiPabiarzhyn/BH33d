@@ -5,10 +5,10 @@
 # import collections
 
 # results = collections.Counter(text)
-# print(results)
+# print(result)
 
 text: str = input('введи текст: ')
 print(text)
-rezult: dict = dict((i, text.count(i)) for i in set(text))
-print(rezult)
+result: dict = dict((i, text.count(i)) for i in set(text))
+print(result)
 
