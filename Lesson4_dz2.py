@@ -8,7 +8,7 @@
 # print(result)
 
 text: str = input('введи текст: ')
-print(text)
-result: dict = dict((i, text.count(i)) for i in set(text))
+result: dict = dict((i, text.count(i)) for i in text)
 print(result)
+
 
