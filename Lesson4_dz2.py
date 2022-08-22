@@ -8,9 +8,7 @@
 # print(results)
 
 text: str = input('введи текст: ')
-# letters: list = text.split()
 print(text)
-# rezult = dict((i, text.count(i)) for i in set(text))
 rezult: dict = dict((i, text.count(i)) for i in set(text))
 print(rezult)
 
