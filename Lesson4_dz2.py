@@ -4,7 +4,7 @@
 
 # import collections
 
-# results = collections.Counter(text)
+# result = collections.Counter(text)
 # print(result)
 
 text: str = input('введи текст: ')
