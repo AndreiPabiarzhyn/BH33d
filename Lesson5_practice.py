@@ -30,10 +30,24 @@
 #     if stroka.count(i) == 1:
 #         print(i)
 
-# вводится два слова, определить являются ли они аннограммами (Играб Рига)
+# вводится числ, посчитать его факториал
 
+# n = int(input('введи число: '))
+# factorial = 1
+#
+# for i in range(2, n+1):
+#     factorial = factorial*i
+#
+# print(factorial)
 
+# пользователь вводит строку, переспрашивать ввод, пока не введет число
+stroka = input('веди число: ')
 
-
+while True:
+    if stroka.isdigit():
+        print(True)
+        break
+    else:
+        stroka = input('веди число: ')
 
 
