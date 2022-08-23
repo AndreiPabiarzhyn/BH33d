@@ -43,11 +43,8 @@
 # пользователь вводит строку, переспрашивать ввод, пока не введет число
 stroka = input('веди число: ')
 
-while True:
-    if stroka.isdigit():
-        print(True)
-        break
-    else:
-        stroka = input('веди число: ')
+while not stroka.isdigit():
+    stroka = input('веди число: ')
+
 
 
