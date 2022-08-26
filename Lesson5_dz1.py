@@ -1,11 +1,9 @@
-# Дан список чисел, отсортировать его по возрастанию
-# без использования sort и sorted
-spisok = [1, 5, 76, 23, 645, 33, 78]
-print(spisok[2])
+# Вывести первые N цисел кратные M и больше K
+lower = int(input('ввести нижний жиапозон: '))
+upper = int(input('ввести нижний жиапозон: '))
+m = int(input('ввести делитель: '))
+k = int(input('введи число: '))
 
-for _ in spisok:
-    for i in range(len(spisok)-1):
-        if spisok[i] > spisok[i+1]:
-            spisok[i], spisok[i+1] = spisok[i+1], spisok[i]
-print(spisok)
-
+for i in range(lower,upper+1):
+    if i%m == 0 and i>k:
+        print(i)

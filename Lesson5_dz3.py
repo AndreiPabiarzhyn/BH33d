@@ -1,26 +1,11 @@
-# Сделать калькулятор: у пользователя
-# спрашивается число, потом действие и второе число
-# while True:
-while True:
-    number_1 = int(input('введи первое число: '))
-    action = input('введи действие (деление, умножение, сложение, разность): ')
-    number_2 = int(input('введи второе число: '))
+#**Вывести четные числа от 2 до N по 5 в строку
+n = int(input('введи число: '))
+i = 2
 
-    if action == 'деление' or action == '/':
-        print(f'{number_1}/{number_2} = {number_1 / number_2}')
-    elif action == 'умножение' or action == '*':
-        print(f'{number_1}*{number_2} = {number_1 * number_2}')
-    elif action == 'сложение' or action == '+':
-        print(f'{number_1}+{number_2} = {number_1 + number_2}')
-    elif action == 'разность' or action == '-':
-        print(f'{number_1}-{number_2} = {number_1 - number_2}')
-    else:
-        print('не такого действия')
-        break
-
-
-
-
-
-
-
+while i <= n:
+    if i%2 == 0:
+        if i%5 == 0:
+            print(i, end=', \n')
+        else:
+            print(i, end=', ')
+    i += 1
